@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            fx:controller="FactoryMethod.controller.MainController">
+	<VBox layoutX="235.0" layoutY="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+	      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<BorderPane>
+			<center>
+				<Label text="Scegli il Modello" textAlignment="CENTER" BorderPane.alignment="CENTER">
+					<font>
+						<Font name="System Bold" size="50.0"/>
+					</font>
+					<BorderPane.margin>
+						<Insets bottom="20.0" top="20.0"/>
+					</BorderPane.margin>
+				</Label>
+			</center>
+		</BorderPane>
+		<BorderPane VBox.vgrow="ALWAYS">
+			<center>
+				<VBox BorderPane.alignment="CENTER">
+					<BorderPane VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="family" onMouseClicked="#showFamily" onMouseEntered="#focusFamily"
+							       onMouseExited="#loseFocus" text="Punto" textAlignment="CENTER">
+								<font>
+									<Font name="Arial" size="37.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+					<BorderPane VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="sport" onMouseClicked="#showSport" onMouseEntered="#focusSport"
+							       onMouseExited="#loseFocus" text="124 Spider" textAlignment="CENTER">
+								<font>
+									<Font name="Arial" size="37.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+					<BorderPane VBox.vgrow="ALWAYS">
+						<center>
+							<Label fx:id="work" onMouseClicked="#showWork" onMouseEntered="#focusWork"
+							       onMouseExited="#loseFocus" text="Nuova 500 XL" textAlignment="CENTER">
+								<font>
+									<Font name="Arial" size="34.0"/>
+								</font>
+							</Label>
+						</center>
+					</BorderPane>
+				</VBox>
+			</center>
+		</BorderPane>
+	</VBox>
+</AnchorPane>
