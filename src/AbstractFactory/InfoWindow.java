@@ -1,7 +1,6 @@
-package FactoryMethod;
+package AbstractFactory;
 
-import FactoryMethod.Factory.abstractions.Creator;
-import FactoryMethod.Factory.abstractions.Product;
+import AbstractFactory.Factory.abstractions.Product;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,12 +11,11 @@ import java.io.IOException;
 public class InfoWindow extends Stage {
 	public static Product prodotto;
 	
-	public InfoWindow(Creator creatore) {
+	public InfoWindow() {
 		super();
 		Parent root = null;
 		
 		try {
-			prodotto = creatore.factoryMethod();
 			root = FXMLLoader.load(getClass().getResource("view/car_info_window.fxml"));
 		} catch (IOException e) {
 			e.printStackTrace();

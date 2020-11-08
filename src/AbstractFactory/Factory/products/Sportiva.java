@@ -1,6 +1,6 @@
-package FactoryMethod.Factory.products;
+package AbstractFactory.Factory.products;
 
-import FactoryMethod.Factory.abstractions.Product;
+import AbstractFactory.Factory.abstractions.Product;
 
 public class Sportiva extends Product {
 	public Sportiva() {
@@ -9,6 +9,6 @@ public class Sportiva extends Product {
 		this.numero_porte = 2;
 		this.numero_sedili = 2;
 		this.ibrida = true;
-		this.filepath = "FactoryMethod/rsc/124.png";
+		this.filepath = "AbstractFactory/rsc/124.png";
 	}
 }

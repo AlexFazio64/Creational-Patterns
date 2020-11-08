@@ -1,4 +1,4 @@
-package FactoryMethod.Factory.abstractions;
+package AbstractFactory.Factory.abstractions;
 
 public abstract class Product {
 	protected String nome;

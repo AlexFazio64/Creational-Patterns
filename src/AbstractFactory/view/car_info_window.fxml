@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
-            fx:controller="FactoryMethod.controller.AutoSpecController">
+            fx:controller="AbstractFactory.controller.AutoSpecController">
 	<VBox alignment="CENTER" layoutX="250.0" layoutY="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
 	      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 		<BorderPane VBox.vgrow="ALWAYS">

@@ -1,6 +1,6 @@
-package FactoryMethod.Factory.products;
+package AbstractFactory.Factory.products;
 
-import FactoryMethod.Factory.abstractions.Product;
+import AbstractFactory.Factory.abstractions.Product;
 
 public class Familiare extends Product {
 	public Familiare() {
@@ -9,6 +9,6 @@ public class Familiare extends Product {
 		this.numero_porte = 2;
 		this.numero_sedili = 4;
 		this.ibrida = false;
-		this.filepath = "FactoryMethod/rsc/Punto.png";
+		this.filepath = "AbstractFactory/rsc/Punto.png";
 	}
 }

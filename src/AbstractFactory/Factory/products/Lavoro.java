@@ -1,6 +1,6 @@
-package FactoryMethod.Factory.products;
+package AbstractFactory.Factory.products;
 
-import FactoryMethod.Factory.abstractions.Product;
+import AbstractFactory.Factory.abstractions.Product;
 
 public class Lavoro extends Product {
 	public Lavoro() {
@@ -9,6 +9,6 @@ public class Lavoro extends Product {
 		this.numero_porte = 4;
 		this.numero_sedili = 6;
 		this.ibrida = false;
-		this.filepath = "FactoryMethod/rsc/500XL.png";
+		this.filepath = "AbstractFactory/rsc/500XL.png";
 	}
 }
