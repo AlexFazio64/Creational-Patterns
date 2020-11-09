@@ -2,8 +2,9 @@ package AbstractFactory.Factory.products;
 
 import AbstractFactory.Factory.abstractions.Product;
 
-public class Sportiva extends Product {
-	public Sportiva() {
+public class FiatSportiva extends Product {
+	public FiatSportiva() {
+		this.marca = "FIAT";
 		this.nome = "124 Spider";
 		this.prezzo = 16500f;
 		this.numero_porte = 2;

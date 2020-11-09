@@ -2,8 +2,9 @@ package AbstractFactory.Factory.products;
 
 import AbstractFactory.Factory.abstractions.Product;
 
-public class Lavoro extends Product {
-	public Lavoro() {
+public class FiatLavoro extends Product {
+	public FiatLavoro() {
+		this.marca = "FIAT";
 		this.nome = "Nuova 500XL";
 		this.prezzo = 10200f;
 		this.numero_porte = 4;

@@ -11,11 +11,12 @@ import java.io.IOException;
 public class InfoWindow extends Stage {
 	public static Product prodotto;
 	
-	public InfoWindow() {
+	public InfoWindow(Product product) {
 		super();
 		Parent root = null;
 		
 		try {
+			prodotto = product;
 			root = FXMLLoader.load(getClass().getResource("view/car_info_window.fxml"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -23,7 +24,7 @@ public class InfoWindow extends Stage {
 		
 		//noinspection ConstantConditions
 		this.setScene(new Scene(root, 600, 400));
-		this.setTitle("Informazioni Automobile");
+		this.setTitle(prodotto.getMarca());
 		this.setResizable(false);
 		this.show();
 	}

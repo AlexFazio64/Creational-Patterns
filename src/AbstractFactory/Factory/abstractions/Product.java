@@ -1,12 +1,17 @@
 package AbstractFactory.Factory.abstractions;
 
 public abstract class Product {
+	protected String marca;
 	protected String nome;
 	protected Float prezzo;
 	protected Integer numero_porte;
 	protected Integer numero_sedili;
 	protected Boolean ibrida;
 	protected String filepath;
+	
+	public String getMarca() {
+		return marca;
+	}
 	
 	public String getNome() {
 		return nome;

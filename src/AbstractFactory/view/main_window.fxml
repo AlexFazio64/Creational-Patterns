@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="AbstractFactory.controller.MainController">
 	<VBox layoutX="235.0" layoutY="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
 	      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 		<BorderPane>
 			<center>
-				<Label text="Scegli" textAlignment="CENTER" BorderPane.alignment="CENTER">
+				<Label text="Scegli il Modello" textAlignment="CENTER" BorderPane.alignment="CENTER">
 					<font>
 						<Font name="System Bold" size="50.0"/>
 					</font>
@@ -18,6 +19,79 @@
 						<Insets bottom="20.0" top="20.0"/>
 					</BorderPane.margin>
 				</Label>
+			</center>
+		</BorderPane>
+		<BorderPane>
+			<center>
+				<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+					<BorderPane fx:id="fiatPane">
+						<HBox.margin>
+							<Insets bottom="10.0" left="40.0" right="40.0" top="10.0"/>
+						</HBox.margin>
+						<center>
+							<ImageView fx:id="fiatImg" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#selectFiat"
+							           pickOnBounds="true" preserveRatio="true"/>
+						</center>
+					</BorderPane>
+					<BorderPane fx:id="bmwPane">
+						<HBox.margin>
+							<Insets bottom="10.0" left="40.0" right="40.0" top="10.0"/>
+						</HBox.margin>
+						<center>
+							<ImageView fx:id="bmwImg" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#selectBmw"
+							           pickOnBounds="true" preserveRatio="true"/>
+						</center>
+					</BorderPane>
+				</HBox>
+			</center>
+		</BorderPane>
+		<BorderPane fx:id="modelsPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+			<center>
+				<HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="200.0"
+				      BorderPane.alignment="CENTER">
+					<BorderPane HBox.hgrow="NEVER">
+						<center>
+							<Label fx:id="familiareLbl" alignment="CENTER" contentDisplay="CENTER"
+							       onMouseClicked="#showFamiliare" onMouseEntered="#focusFamiliare"
+							       onMouseExited="#loseFocus" text="Familiare" BorderPane.alignment="CENTER">
+								<font>
+									<Font name="System Bold" size="36.0"/>
+								</font>
+							</Label>
+						</center>
+						<HBox.margin>
+							<Insets left="30.0" right="30.0"/>
+						</HBox.margin>
+					</BorderPane>
+					<BorderPane layoutX="263.0" layoutY="50.0" HBox.hgrow="NEVER">
+						<center>
+							<Label fx:id="sportivaLbl" alignment="CENTER" contentDisplay="CENTER"
+							       onMouseClicked="#showSportiva" onMouseEntered="#focusSportiva"
+							       onMouseExited="#loseFocus" text="Sportiva" BorderPane.alignment="CENTER">
+								<font>
+									<Font name="System Bold" size="36.0"/>
+								</font>
+							</Label>
+						</center>
+						<HBox.margin>
+							<Insets left="30.0" right="30.0"/>
+						</HBox.margin>
+					</BorderPane>
+					<BorderPane layoutX="215.0" layoutY="50.0" HBox.hgrow="NEVER">
+						<center>
+							<Label fx:id="lavoroLbl" alignment="CENTER" contentDisplay="CENTER"
+							       onMouseClicked="#showLavoro" onMouseEntered="#focusLavoro" onMouseExited="#loseFocus"
+							       text="Lavoro" BorderPane.alignment="CENTER">
+								<font>
+									<Font name="System Bold" size="36.0"/>
+								</font>
+							</Label>
+						</center>
+						<HBox.margin>
+							<Insets left="30.0" right="30.0"/>
+						</HBox.margin>
+					</BorderPane>
+				</HBox>
 			</center>
 		</BorderPane>
 	</VBox>

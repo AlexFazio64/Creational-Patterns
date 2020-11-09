@@ -2,8 +2,9 @@ package AbstractFactory.Factory.products;
 
 import AbstractFactory.Factory.abstractions.Product;
 
-public class Familiare extends Product {
-	public Familiare() {
+public class FiatFamiliare extends Product {
+	public FiatFamiliare() {
+		this.marca = "FIAT";
 		this.nome = "Punto";
 		this.prezzo = 6500f;
 		this.numero_porte = 2;
