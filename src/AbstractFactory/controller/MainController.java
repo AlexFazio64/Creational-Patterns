@@ -39,8 +39,21 @@ public class MainController {
 	InfoWindow iw;
 	
 	public void initialize() {
-		fiatImg.setImage(new Image("AbstractFactory/rsc/FiatLogo.png"));
-		bmwImg.setImage(new Image("AbstractFactory/rsc/BMWLogo.png"));
+		try {
+			factory = AbstractFactory.getInstance();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		String path = "AbstractFactory.Factory.implementations.ConcreteFactory";
+		
+		if ( AbstractFactory.getClassName().equals(path + "Fiat") ) {
+			fiatImg.setImage(new Image("AbstractFactory/rsc/FiatLogo.png"));
+			bmwPane.getChildren().remove(bmwImg);
+		} else if ( AbstractFactory.getClassName().equals(path + "BMW") ) {
+			bmwImg.setImage(new Image("AbstractFactory/rsc/BMWLogo.png"));
+			fiatPane.getChildren().remove(fiatImg);
+		}
 		
 		labels = new ArrayList<>();
 		labels.addAll(Arrays.asList(familiareLbl, sportivaLbl, lavoroLbl));
