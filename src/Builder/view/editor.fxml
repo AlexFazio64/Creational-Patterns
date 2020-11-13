@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Builder.controller.EditorController">
+	<HBox alignment="CENTER" layoutX="56.0" layoutY="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+	      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<BorderPane prefHeight="200.0" prefWidth="350.0">
+			<center>
+				<Canvas height="400.0" width="450.0" BorderPane.alignment="CENTER"/>
+			</center>
+		</BorderPane>
+		<ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+			<VBox alignment="CENTER">
+				<BorderPane prefHeight="100.0" prefWidth="225.0">
+					<top>
+						<Label text="Option" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="16.0"/>
+							</font>
+						</Label>
+					</top>
+					<center>
+						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<BorderPane HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</center>
+					<VBox.margin>
+						<Insets/>
+					</VBox.margin>
+				</BorderPane>
+				<BorderPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+					<top>
+						<Label text="Option" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="16.0"/>
+							</font>
+						</Label>
+					</top>
+					<center>
+						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<BorderPane HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</center>
+				</BorderPane>
+				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+					<top>
+						<Label text="Option" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="16.0"/>
+							</font>
+						</Label>
+					</top>
+					<center>
+						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<BorderPane HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</center>
+				</BorderPane>
+				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+					<top>
+						<Label text="Option" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="16.0"/>
+							</font>
+						</Label>
+					</top>
+					<center>
+						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<BorderPane HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</center>
+				</BorderPane>
+				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+					<top>
+						<Label text="Option" BorderPane.alignment="CENTER">
+							<font>
+								<Font size="16.0"/>
+							</font>
+						</Label>
+					</top>
+					<center>
+						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<BorderPane HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+								<center>
+									<Button mnemonicParsing="false" text="Button"/>
+								</center>
+							</BorderPane>
+						</HBox>
+					</center>
+				</BorderPane>
+			</VBox>
+		</ScrollPane>
+	</HBox>
+</AnchorPane>
