@@ -1,7 +1,9 @@
 package Builder.pattern;
 
 public interface Builder {
-	void Build(String input);
+	void initialize();
+	
+	void Build(char token);
 	
 	Object getResult();
 }

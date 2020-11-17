@@ -3,50 +3,53 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-
-<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Builder.controller.EditorController">
-	<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Builder.controller.EditorController">
+	<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0"
+	      spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+	      AnchorPane.topAnchor="0.0">
 		<BorderPane>
 			<center>
 				<Label text="Text Conversion">
 					<font>
-						<Font size="24.0" />
+						<Font size="24.0"/>
 					</font>
 				</Label>
 			</center>
 		</BorderPane>
 		<TextField fx:id="input" alignment="CENTER" onKeyPressed="#buildChar" promptText="write something here...">
 			<font>
-				<Font size="18.0" />
+				<Font size="18.0"/>
 			</font>
 			<VBox.margin>
-				<Insets left="20.0" right="20.0" />
+				<Insets left="20.0" right="20.0"/>
 			</VBox.margin>
 		</TextField>
 		<Separator prefWidth="200.0">
 			<VBox.margin>
-				<Insets left="10.0" right="10.0" />
+				<Insets left="10.0" right="10.0"/>
 			</VBox.margin>
 		</Separator>
 		<TextArea fx:id="asciiArea" editable="false" prefHeight="190.0" prefWidth="200.0" promptText="ascii text">
 			<VBox.margin>
-				<Insets left="20.0" right="20.0" />
+				<Insets left="20.0" right="20.0"/>
 			</VBox.margin>
 			<font>
-				<Font name="Monospaced Regular" size="17.0" />
+				<Font name="Monospaced Regular" size="17.0"/>
 			</font>
 		</TextArea>
 		<Separator layoutX="20.0" layoutY="114.0" prefWidth="200.0">
 			<VBox.margin>
-				<Insets left="10.0" right="10.0" />
+				<Insets left="10.0" right="10.0"/>
 			</VBox.margin>
 		</Separator>
 		<ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="270.0" vbarPolicy="NEVER">
 			<VBox.margin>
-				<Insets left="20.0" right="20.0" />
+				<Insets left="20.0" right="20.0"/>
 			</VBox.margin>
-			<HBox fx:id="graphicsPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="270.0" prefWidth="200.0" />
+			<HBox fx:id="graphicsPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="270.0"
+			      prefWidth="200.0"/>
 		</ScrollPane>
 	</VBox>
 </AnchorPane>

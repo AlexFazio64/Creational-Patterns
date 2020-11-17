@@ -28,42 +28,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Initial setup">
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/ASCIIString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderASCII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderScript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/pattern/ScriptString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/i.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/j.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/o.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/q.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/u.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/resources/z.png" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Builder Implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Builder/controller/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/controller/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/ASCIIString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/ASCIIString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderASCII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderASCII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/ConcreteBuilderScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/pattern/ScriptString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/pattern/ScriptString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Builder/view/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/view/editor.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +149,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -253,19 +227,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -327,7 +288,9 @@
       <workItem from="1605215332866" duration="14401000" />
       <workItem from="1605458286621" duration="600000" />
       <workItem from="1605566579351" duration="11043000" />
-      <workItem from="1605580912237" duration="4980000" />
+      <workItem from="1605580912237" duration="5140000" />
+      <workItem from="1605628223905" duration="64000" />
+      <workItem from="1605647803598" duration="4380000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <created>1605229057826</created>
@@ -336,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605229057826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Builder Implementation">
+      <created>1605586004805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605586004805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +341,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup" />
+    <MESSAGE value="Builder Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Builder Implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="0" key="#Code_Folding" timestamp="1605216529830">
@@ -386,10 +357,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" width="1089" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605221077173" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1605583072961">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1605651203639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605583072961" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605651203639" />
     <state x="527" y="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604876894714">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -410,6 +381,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="402" height="618" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605584067057" />
+    <state x="549" y="134" key="FileChooserDialogImpl" timestamp="1605586052474">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="134" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605586052474" />
     <state x="623" y="312" key="Github.ShareDialog" timestamp="1604875084945">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -418,22 +393,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="34" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604875125773" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1605585879677">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1605652164150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605585879677" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1605585879676">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605652164150" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1605652164150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605585879676" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1605585879676">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605652164150" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1605652164150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605585879676" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1605585879677">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605652164150" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1605652164150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605585879677" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605652164150" />
     <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1605584131805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -454,21 +429,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="177" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605293703370" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1605229067718">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1605586011764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605229067718" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605586011764" />
+    <state x="303" y="11" width="1234" height="806" key="dock-window-1" timestamp="1605649050551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="303" y="11" width="1234" height="806" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1605649050551" />
     <state x="472" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1605223689639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="148" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1605223689639" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1605581196307">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605649576081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605581196307" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605584750128">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605649576081" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605650439902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605584750128" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605650439902" />
   </component>
 </project>

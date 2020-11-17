@@ -17,28 +17,25 @@ public class EditorController {
 	public TextArea asciiArea;
 	public HBox graphicsPane;
 	
-	Director directorASCII;
-	Director directorScript;
+	Director director;
 	
 	public void initialize() {
-		directorASCII = new Director();
-		directorScript = new Director();
-		
-		directorASCII.setBuilder(new ConcreteBuilderASCII());
-		directorScript.setBuilder(new ConcreteBuilderScript());
+		director = new Director();
 	}
 	
 	
 	public void buildChar(KeyEvent keyEvent) {
 		if ( keyEvent.getCode() == KeyCode.ENTER ) {
-			directorScript.buildProduct(input.getText());
-			directorASCII.buildProduct(input.getText());
+			director.setBuilder(new ConcreteBuilderASCII());
+			director.buildProduct(input.getText());
+			asciiArea.setText((String) director.getBuilder().getResult());
 			
-			asciiArea.setText((String) directorASCII.getBuilder().getResult());
-			
-			ArrayList<ImageView> pics = ( (ConcreteBuilderScript) directorScript.getBuilder() ).getResult();
+			director.setBuilder(new ConcreteBuilderScript());
+			director.buildProduct(input.getText());
+			ArrayList<ImageView> pics = ( (ConcreteBuilderScript) director.getBuilder() ).getResult();
 			graphicsPane.getChildren().clear();
 			graphicsPane.getChildren().addAll(pics);
+			input.setText("");
 		}
 	}
 }
