@@ -16,10 +16,10 @@ public class Client extends Application {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/editor.fxml"));
 		Stage mainStage = new Stage();
 		mainStage.setScene(new Scene(loader.load()));
-		mainStage.setWidth(700);
-		mainStage.setHeight(400);
+		mainStage.setWidth(400);
+		mainStage.setHeight(700);
 		mainStage.setResizable(false);
-		mainStage.setTitle("Character Creation");
+		mainStage.setTitle("Text Presentation");
 		mainStage.show();
 	}
 }

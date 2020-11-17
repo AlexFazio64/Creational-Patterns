@@ -1,165 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.canvas.Canvas?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Builder.controller.EditorController">
-	<HBox alignment="CENTER" layoutX="56.0" layoutY="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-	      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-		<BorderPane prefHeight="200.0" prefWidth="350.0">
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Builder.controller.EditorController">
+	<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<BorderPane>
 			<center>
-				<Canvas height="400.0" width="450.0" BorderPane.alignment="CENTER"/>
+				<Label text="Text Conversion">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
 			</center>
 		</BorderPane>
-		<ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
-			<VBox alignment="CENTER">
-				<BorderPane prefHeight="100.0" prefWidth="225.0">
-					<top>
-						<Label text="Option" BorderPane.alignment="CENTER">
-							<font>
-								<Font size="16.0"/>
-							</font>
-						</Label>
-					</top>
-					<center>
-						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
-							<BorderPane HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-						</HBox>
-					</center>
-					<VBox.margin>
-						<Insets/>
-					</VBox.margin>
-				</BorderPane>
-				<BorderPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
-					<top>
-						<Label text="Option" BorderPane.alignment="CENTER">
-							<font>
-								<Font size="16.0"/>
-							</font>
-						</Label>
-					</top>
-					<center>
-						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
-							<BorderPane HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-						</HBox>
-					</center>
-				</BorderPane>
-				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
-					<top>
-						<Label text="Option" BorderPane.alignment="CENTER">
-							<font>
-								<Font size="16.0"/>
-							</font>
-						</Label>
-					</top>
-					<center>
-						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
-							<BorderPane HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-						</HBox>
-					</center>
-				</BorderPane>
-				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
-					<top>
-						<Label text="Option" BorderPane.alignment="CENTER">
-							<font>
-								<Font size="16.0"/>
-							</font>
-						</Label>
-					</top>
-					<center>
-						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
-							<BorderPane HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-						</HBox>
-					</center>
-				</BorderPane>
-				<BorderPane layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
-					<top>
-						<Label text="Option" BorderPane.alignment="CENTER">
-							<font>
-								<Font size="16.0"/>
-							</font>
-						</Label>
-					</top>
-					<center>
-						<HBox alignment="CENTER" BorderPane.alignment="CENTER">
-							<BorderPane HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="109.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-							<BorderPane layoutX="136.0" layoutY="10.0" HBox.hgrow="ALWAYS">
-								<center>
-									<Button mnemonicParsing="false" text="Button"/>
-								</center>
-							</BorderPane>
-						</HBox>
-					</center>
-				</BorderPane>
-			</VBox>
+		<TextField fx:id="input" alignment="CENTER" onKeyPressed="#buildChar" promptText="write something here...">
+			<font>
+				<Font size="18.0" />
+			</font>
+			<VBox.margin>
+				<Insets left="20.0" right="20.0" />
+			</VBox.margin>
+		</TextField>
+		<Separator prefWidth="200.0">
+			<VBox.margin>
+				<Insets left="10.0" right="10.0" />
+			</VBox.margin>
+		</Separator>
+		<TextArea fx:id="asciiArea" editable="false" prefHeight="190.0" prefWidth="200.0" promptText="ascii text">
+			<VBox.margin>
+				<Insets left="20.0" right="20.0" />
+			</VBox.margin>
+			<font>
+				<Font name="Monospaced Regular" size="17.0" />
+			</font>
+		</TextArea>
+		<Separator layoutX="20.0" layoutY="114.0" prefWidth="200.0">
+			<VBox.margin>
+				<Insets left="10.0" right="10.0" />
+			</VBox.margin>
+		</Separator>
+		<ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="270.0" vbarPolicy="NEVER">
+			<VBox.margin>
+				<Insets left="20.0" right="20.0" />
+			</VBox.margin>
+			<HBox fx:id="graphicsPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="270.0" prefWidth="200.0" />
 		</ScrollPane>
-	</HBox>
+	</VBox>
 </AnchorPane>
